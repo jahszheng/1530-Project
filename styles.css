@@ -1,0 +1,19 @@
+.vl {
+    border-left: 2px solid black;
+    height: 100%;
+    position: absolute;
+    left: 220px;
+    top: 0;
+    bottom: 0;
+}
+
+.ingredients_bar {
+    display: inline-flex;
+    flex-wrap: wrap;
+    max-width: 180px;
+}
+
+.ingredients_bar label {
+    display: inline-flex;
+    align-items: center;
+}
