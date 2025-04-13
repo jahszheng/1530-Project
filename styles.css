@@ -2,18 +2,29 @@
     border-left: 2px solid black;
     height: 100%;
     position: absolute;
-    left: 220px;
+    left: 230px;
     top: 0;
     bottom: 0;
 }
 
-.ingredients_bar {
-    display: inline-flex;
-    flex-wrap: wrap;
-    max-width: 180px;
+.search {
+    padding-bottom: 10px;
+    font-size:large;
+}
+.search input {
+    margin-left:200px;
+    width:1500px
+}
+.add_ingredient li {
+    list-style-type: none;
+}
+.add_ingredient input {
+    margin-left:-40px;
 }
 
-.ingredients_bar label {
-    display: inline-flex;
-    align-items: center;
+.add_recipe li {
+    list-style-type: none;
+}
+.add_recipe input {
+    margin-left:-40px;
 }

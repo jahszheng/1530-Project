@@ -1,72 +1,63 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Recipe Website</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="ingredients_bar">
-        <div class="protein_box">
-            <h3>Protein</h3>
-            <div class="checkbox-container">
-              <label><input type="checkbox" name="protein_1" id="chicken"> Chicken</label>
-              <label><input type="checkbox" name="protein_2" id="beef"> Beef</label>
-              <label><input type="checkbox" name="protein_3" id="pork"> Pork</label>
-              <label><input type="checkbox" name="protein_4" id="eggs"> Eggs</label>
-              <label><input type="checkbox" name="protein_5" id="bacon"> Bacon</label>
-              <label><input type="checkbox" name="protein_6" id="soy"> Soy</label>
-            </div>
-          </div>
-          
-          <div class="vegetables_box">
-            <h3>Vegetables</h3>
-            <div class="checkbox-container">
-              <label><input type="checkbox" name="vegetable_1" id="cabbage"> Cabbage</label>
-              <label><input type="checkbox" name="vegetable_2" id="carrot"> Carrot</label>
-              <label><input type="checkbox" name="vegetable_3" id="potato"> Potato</label>
-              <label><input type="checkbox" name="vegetable_4" id="onion"> Onion</label>
-              <label><input type="checkbox" name="vegetable_5" id="pepper"> Pepper</label>
-            </div>
-          </div>
-          
-          <div class="section fruit_box">
-            <h3>Fruits</h3>
-            <div class="checkbox-container">
-              <label><input type="checkbox" name="fruit_1" id="apple"> Apple</label>
-              <label><input type="checkbox" name="fruit_2" id="banana"> Banana</label>
-              <label><input type="checkbox" name="fruit_3" id="orange"> Orange</label>
-              <label><input type="checkbox" name="fruit_4" id="blueberry"> Blueberry</label>
-            </div>
-          </div>
-          
-          <div class="grain_box">
-            <h3>Grains</h3>
-            <div class="checkbox-container">
-              <label><input type="checkbox" name="grain_1" id="oats"> Oats</label>
-              <label><input type="checkbox" name="grain_2" id="rice"> Rice</label>
-              <label><input type="checkbox" name="grain_3" id="b_rice"> Brown Rice</label>
-            </div>
-          </div>
-          
-          <div class="dairy_box">
-            <h3>Dairy</h3>
-            <div class="checkbox-container">
-              <label><input type="checkbox" name="dairy_1" id="milk"> Milk</label>
-              <label><input type="checkbox" name="dairy_2" id="soy_milk"> Soy Milk</label>
-              <label><input type="checkbox" name="dairy_3" id="cheddar"> Cheddar</label>
-              <label><input type="checkbox" name="dairy_4" id="mozz"> Mozzarella</label>
-            </div>
-          </div>
 
-    <div class="nav_bar">
-      <div class="search-container">
-        <form action="">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe Website</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-        </form>
-      </div>
+<body>
+  <div class="search">
+    <legend>View Recipes</legend>
+  <button type="button" id="Search Recipes">Search</button>
+  <input type="text" name="" id="" placeholder="Search Recipes...">
+  <br />
+  </div>
+
+  <div class="add_ingredient">
+    <legend>Add a new ingredient</legend>
+    <ul>
+      <li>
+        <input type="text" id="insert_new_ingredient_text_input" placeholder="Enter Ingredient name..." />
+      </li>
+      <li>
+        <input type="text" id="insert_new_ingredient_category_text_input" placeholder="Enter Category..." />
+      </li>
+      <li>
+        <input type="text" id="insert_new_ingredient_price_text_input" placeholder="Enter Price..." />
+      </li>
+    </ul>
+    <button type="button" id="add_new_sp_button">Add new ingredient</button>
+  </div>
+
+
+  <div class="add_recipe">
+    <legend>Add a new recipe</legend>
+  <ul>
+    <li>
+      <input type="text" id="insert_new_recipe_text_input" placeholder="Enter Recipe name..." />
+    </li>
+    <li>
+      <input type="text" id="insert_new_ingredients_text_input" placeholder="Enter Ingredients..." />
+    </li>
+    <li>
+      <input type="text" id="insert_new_directions_text_input" placeholder="Enter Directions..." />
+    </li>
+    <li>
+      <input type="text" id="insert_new_description_text_input" placeholder="Enter Description..."/>
+    </li>
+  </ul>
+  <button type="button" id="add_new_sp_button">Add new recipe</button>
+  </div>
+
+  <div class="nav_bar">
+    <div class="search-container">
+      <form action=""></form>
     </div>
+  </div>
 
-    <div class="vl"></div>
-  </body>
+  <div class="vl"></div>
+</body>
+
 </html>
