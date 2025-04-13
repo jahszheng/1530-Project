@@ -2,18 +2,22 @@
     border-left: 2px solid black;
     height: 100%;
     position: absolute;
-    left: 230px;
+    left: 260px;
     top: 0;
     bottom: 0;
 }
 
 .search {
-    padding-bottom: 10px;
+    padding: 10px;
     font-size:large;
 }
 .search input {
     margin-left:200px;
     width:1500px
+}
+
+.add_ingredient {
+    padding:10px;
 }
 .add_ingredient li {
     list-style-type: none;
@@ -22,9 +26,22 @@
     margin-left:-40px;
 }
 
+.add_recipe {
+    padding:10px;
+}
 .add_recipe li {
     list-style-type: none;
 }
 .add_recipe input {
     margin-left:-40px;
+}
+
+.pantry {
+    padding:10px;
+    margin-top: 100px;
+}
+
+.pantry button {
+    margin-top:100px;
+    margin-bottom: 10px;
 }
