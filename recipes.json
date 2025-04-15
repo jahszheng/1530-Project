@@ -20,9 +20,9 @@
         },
         {
             "id":3,
-            "Rname": "",
+            "Rname": "ice cream bowl",
             "ingredents":[
-                "ice cream"
+                "vanilla ice cream"
             ],
             "steps" 
             : "eat the ice cream out of the tub... this is a joke submission"
