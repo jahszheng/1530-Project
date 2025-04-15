@@ -1,69 +1,79 @@
 {
     "Ingredents": [
         {
-            "id": "1",
+            "id": 1,
             "name": "apple",
             "price": "1.56"
         },
         {
-            "id": "2",
+            "id": 2,
             "name": "Ice",
             "price": ".50"
         },
         {
-            "id": "3",
+            "id": 3,
             "name": "milk",
             "price": "2.46"
         },
         {
-            "id": "4",
+            "id": 4,
             "name": "honey",
             "price": "7.00"
         },
         {
-            "id": "5",
+            "id": 5,
             "name": "vanilla ice cream",
             "price": "5.36"
         },
         {
-            "id": "6",
+            "id": 6,
             "name": "flour",
             "price": "9.49"
         },
         {
-            "id": "7",
-            "name": "eggs",
+            "id": 7,
+            "name": "egg",
             "price": "6.27"
         },
         {
-            "id": "8",
+            "id": 8,
             "name": "water",
             "price": "0.00"
         },
         {
-            "id": "9",
+            "id": 9,
             "name": "white sugar",
             "price": "21.78"
         },
         {
-            "id": "10",
+            "id": 10,
             "name": "linguine pasta",
             "price": "2.99"
         },
         {
-            "id": "11",
+            "id": 11,
             "name": "tomato",
             "price": "6.99"
         },
         {
-            "id": "12",
+            "id": 12,
             "name": "salted butter",
             "price": "3.18"
         },
         {
-            "id": "13",
+            "id": 13,
+            "name": "unsalted butter",
+            "price": "3.18"
+        },
+        {
+            "id": 14,
             "name": "salt",
             "price": "9.12"
+        },
+        {
+            "id": 15,
+            "name": "cinnamon",
+            "price": "7.59"
         }
 
     ]

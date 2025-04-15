@@ -1,0 +1,33 @@
+{
+    "recipes": [
+        {
+            "id" :1,
+            "Rname": "apple crumble",
+            "ingredents": [
+                "apple","white sugar", "flour","unsalted butter", "cinnamon"
+            ],
+            "steps" : "cut apples into pieces and put into a baking dish. \n combine sugar, flour, water, butter and salt into another bowl. \n add mixture ontop of apples in dish and bake until brown."
+        },
+        {
+            "id":2,
+            "Rname": "pie crust",
+            "ingredents":[
+                "flour", "Salt", "unsalted butter", "water"
+            ],
+            "steps" 
+            : "Combine the flour and salt into bowl. \n slice cold butter and mix into the bowl of flour and salt until clumps form.\n add cold water a tablespoon at a time.\n roll dough into a cirlce and press into a pan."
+
+        },
+        {
+            "id":3,
+            "Rname": "",
+            "ingredents":[
+                "ice cream"
+            ],
+            "steps" 
+            : "eat the ice cream out of the tub... this is a joke submission"
+
+        }
+
+    ]
+}
