@@ -1,51 +1,72 @@
+button {
+    border-radius: 10px;
+}
+
+li {
+    list-style-type: none;
+    margin-left: -40px;
+    padding:2px;
+}
+
+textarea{
+    width: 100%;
+    min-height: 60px;
+    max-height: 300px;
+    resize: vertical;
+    padding: 10px;
+    font-size: 15px;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+input {
+    width:100%;
+}
+.add_ingredient,
+.add_recipe,
+.save_recipe,
+.pantry {
+    padding:10px;
+    border: 2px solid #606b21; 
+    margin-top:30px;
+    margin-bottom: 30px;
+    border-radius: 6px; 
+    display: flex;
+    flex-direction: column;
+}
+
 .vl {
-    border-left: 2px solid black;
+    border-left: 2px solid #606b21;
     height: 100%;
     position: absolute;
-    left: 260px;
+    left: 276px;
     top: 0;
     bottom: 0;
 }
 
 .left_box {
+    font-size: large;
     max-width: 260px;
 }
 
-.search {
-    padding: 10px;
-    font-size:large;
-}
 .search input {
-    margin-left:200px;
-    width:1500px
+    position:absolute;
+    top:60px;
+    left:400px;
+    width:1400px
 }
 
-.add_ingredient {
-    padding:10px;
-}
-.add_ingredient li {
-    list-style-type: none;
-}
-.add_ingredient input {
-    margin-left:-40px;
-}
-
-.add_recipe {
-    padding:10px;
-}
-.add_recipe li {
-    list-style-type: none;
-}
-.add_recipe input {
-    margin-left:-40px;
-}
-
-.pantry {
-    padding:10px;
-    margin-top: 100px;
+.search button {
+    margin-left:1800px;
+    margin-top: -10px;
+    border-radius:10px;
 }
 
 .pantry button {
-    margin-top:100px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.website_name legend{
+    margin-top: 50px;
+    font-size:large;
 }

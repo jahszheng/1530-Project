@@ -8,14 +8,16 @@
 </head>
 
 <body>
-  <div class="left_box">
-    <div class="search">
-      <legend>View Recipes</legend>
-      <button type="button" id="Search Recipes">Search</button>
-      <input type="text" name="" id="" placeholder="Search Recipes...">
-      <br />
+  <div class="top_bar">
+    <div class="website_name">
+      <legend>JSPantry</legend>
     </div>
-
+    <div class="search">
+      <input type="text" placeholder="Search Recipes..." />
+      <button type="button">Search</button>
+    </div>
+  </div>
+  <div class="left_box">
     <div class="add_ingredient">
       <legend>Add a new ingredient</legend>
       <ul>
@@ -43,23 +45,33 @@
           <input type="text" id="insert_new_ingredients_text_input" placeholder="Enter Ingredients..." />
         </li>
         <li>
-          <input type="text" id="insert_new_directions_text_input" placeholder="Enter Directions..." />
+          <textarea id="insert_new_directions_textarea" placeholder="Enter Directions..."></textarea>
         </li>
         <li>
-          <input type="text" id="insert_new_description_text_input" placeholder="Enter Description..." />
+          <textarea id="insert_new_description_textarea" placeholder="Enter Description..."></textarea>
         </li>
       </ul>
       <button type="button" id="add_new_sp_button">Add new recipe</button>
     </div>
 
-    <div class="pantry">
-      <a href="pantry.html">
-      <legend>View/Modify Your Pantry</legend>
-      </a>
+    <div class="save_recipe">
+      <legend>Save Recipe</legend>
+      <ul>
+        <li>
+          <input type="text" id="insert_recipe_name_text_input" placeholder="Enter Recipe name..." />
+        </li>
+      </ul>
+      <button type="button" id="save_recipe_button">Save recipe</button>
     </div>
+
+    <div class="pantry">
+  <legend>The Pantry</legend>
+  <button type="button" onclick="location.href='pantry.html'">View/Modify Pantry</button>
+</div>
   </div>
 
   <div class="vl"></div>
+  <div class="hl"></div>
 </body>
 
 </html>
