@@ -15,18 +15,31 @@ function add_event_listeners(){
     addIngred.addEventListener("click",add_ingredints);
 }
 
+
 async function add_ingredints(){
+
+    const existingNames = new Set(
+        existingIngredients.map(item => item.name.toLowerCase())
+    );
+
+    if (existingNames.has(ingred.toLowerCase())) {
+        alert(`"${ingred}" already exists!`);
+        return;
+    }
+
     let ingred = ingredname.value;
     let expense = price.value;
 
-    let update_fields = {};
-    if (ingred != ""){
-        update_fields["name"] = ingred;
-    }
-    if (expense != ""){
-        update_fields["price"] = expense;
+    let new_ingred = {
+        "name": ingred,
+        "price": expense   
     }
 
-    await http_patch_request()
+    await http_post_request(blog_url, new_blog);
+
+    ingred = "";
+    expense = "";
+
+    output_window.innerHTML = "";
 
 }
