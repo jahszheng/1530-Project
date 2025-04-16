@@ -1,33 +1,23 @@
 const fs = require('fs');
 
-function addIngredient(name, price) {
-    let ingredients = [];
-    try {
-        const data = fs.readFileSync('ingredients.json', 'utf8');
-        ingredients = JSON.parse(data);
-    } catch (err) {
-        console.log("File not found or empty. Starting fresh.");
-    }
+var ingreds = new URL("http://localhost:8000/ingreds");
+ingredname;
+price;
 
-    if (nameExists) {
-        console.log(`"${newName}" already exists! Not adding.`);
-        return; 
-    }
+function addIngredient(){
+    addIngredentButton = document.getElementById("add_new_sp_button").addEventListener("submit", async (e));
+    ingredname = document.getElementById("insert_new_ingredient_text_input").value.trim();
+    price = document.getElementById("insert_new_ingredient_price_text_input").value;
 
-    const nameExists = ingredients.some(
-        (item) => item.name.toLowerCase() === newName.toLowerCase()
-    );
-
-    const newId = ingredients.length > 0 
-        ? Math.max(...ingredients.map(item => item.id)) + 1 
-        : 1;
-    ingredients.push({
-        id: newId,
-        name: newName,
-        price: newPrice
-    });
-
-    fs.writeFileSync('ingredients.json', JSON.stringify(ingredients, null, 2));
-    console.log(`Added new ingredient: ${newName} (ID: ${newId})`);
 }
 
+function add_event_listeners(){
+    addIngred.addEventListener("click",add_ingredints);
+}
+
+async function add_ingredints(){
+    let ingred = ingredname;
+    let expense = price;
+
+
+}
