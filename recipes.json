@@ -7,6 +7,7 @@
                 "apple","white sugar", "flour","unsalted butter", "cinnamon"
             ],
             "steps" : "cut apples into pieces and put into a baking dish. \n combine sugar, flour, water, butter and salt into another bowl. \n add mixture ontop of apples in dish and bake until brown."
+            ,"description" : "This is a basic apple crumble"
         },
         {
             "id":2,
@@ -15,8 +16,9 @@
                 "flour", "Salt", "unsalted butter", "water"
             ],
             "steps" 
-            : "Combine the flour and salt into bowl. \n slice cold butter and mix into the bowl of flour and salt until clumps form.\n add cold water a tablespoon at a time.\n roll dough into a cirlce and press into a pan."
-
+            : "Combine the flour and salt into bowl. \n slice cold butter and mix into the bowl of flour and salt until clumps form.\n add cold water a tablespoon at a time.\n roll dough into a cirlce and press into a pan.",
+            "description" : "This is a basic pie crust"
+            
         },
         {
             "id":3,
@@ -25,7 +27,8 @@
                 "vanilla ice cream"
             ],
             "steps" 
-            : "eat the ice cream out of the tub... this is a joke submission"
+            : "eat the ice cream out of the tub... this is a joke submission",
+            "description" : "This is a bowl of ice cream... it was a joke entry"
 
         }
 
