@@ -16,8 +16,17 @@ function add_event_listeners(){
 }
 
 async function add_ingredints(){
-    let ingred = ingredname;
-    let expense = price;
+    let ingred = ingredname.value;
+    let expense = price.value;
 
+    let update_fields = {};
+    if (ingred != ""){
+        update_fields["name"] = ingred;
+    }
+    if (expense != ""){
+        update_fields["price"] = expense;
+    }
+
+    await http_patch_request()
 
 }
