@@ -1,4 +1,5 @@
 var ingreds = new URL("http://localhost:8000/ingreds");
+let items = JSON.parse(localStorage.getItem('Ingredents')) || [];
 
 function addIngredient(){
     addIngredentButton = document.getElementById("add_new_sp_button");
@@ -31,7 +32,8 @@ async function add_ingredints(){
         alert(`"${ingred}" already exists!`);
         return;
     }
-
+    items.push(new_ingred);
+    localStorage.setItem('items', JSON.stringify(items));
     await http_post_request(ingreds, new_ingred);
 
     ingred = "";
