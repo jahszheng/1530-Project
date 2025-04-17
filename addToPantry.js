@@ -17,7 +17,7 @@ async function searchItems() {
 
 function updateList(items) {
     const list = document.getElementById('list-of-items');
-    list.innerHTML = '';
+    list.innerHTML = ''; // Clear the list
 
     items.forEach(item => {
         const li = document.createElement('li');
