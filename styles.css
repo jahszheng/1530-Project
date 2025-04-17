@@ -26,22 +26,13 @@ input {
 .add_recipe,
 .save_recipe,
 .pantry {
-    padding:10px;
+    padding:6px;
     border: 2px solid #606b21; 
-    margin-top:30px;
-    margin-bottom: 30px;
+    margin-top:5%;
+    margin-bottom: 5%;
     border-radius: 6px; 
     display: flex;
     flex-direction: column;
-}
-
-.vl {
-    border-left: 2px solid #606b21;
-    height: 100%;
-    position: absolute;
-    left: 276px;
-    top: 0;
-    bottom: 0;
 }
 
 .left_box {
@@ -52,13 +43,14 @@ input {
 .search input {
     position:absolute;
     top:60px;
-    left:400px;
-    width:1400px
+    margin-left:25%;
+    width:60%
 }
 
 .search button {
-    margin-left:1800px;
-    margin-top: -10px;
+    position:absolute;
+    margin-left:86%;
+    margin-top: 2%;
     border-radius:10px;
 }
 
@@ -67,6 +59,6 @@ input {
 }
 
 .website_name legend{
-    margin-top: 50px;
+    margin-top: 10px;
     font-size:large;
 }
