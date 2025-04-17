@@ -21,7 +21,7 @@ async function add_ingredints(){
         "name": ingred,
         "price": expense   
     }
-    const response = await fetch("./Ingreedent");
+    const response = await fetch("Ingredents.json");
     const existingIngredients = await response.json();
     const existingNames = new Set(
         existingIngredients.map(item => item.name.toLowerCase())
