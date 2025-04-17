@@ -21,7 +21,7 @@ function updateList(items) {
 
     items.forEach(item => {
         const li = document.createElement('li');
-        li.className = 'list-of-items';
+        li.className = 'pantry-item';
         li.innerHTML = `
             <h3>${item.name}</h3>
             <h4>${item.price}</h4>
