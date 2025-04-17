@@ -37,6 +37,5 @@ async function add_ingredints(){
     ingred = "";
     expense = "";
 
-    output_window.innerHTML = "";
 
 }
