@@ -32,7 +32,7 @@ async function add_ingredints(){
         return;
     }
 
-    await http_post_request(blog_url, new_blog);
+    await http_post_request(ingreds, new_ingred);
 
     ingred = "";
     expense = "";
