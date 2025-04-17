@@ -152,6 +152,7 @@ async function add_Rec(){
 
 }
 
+
 // Initialize everything when DOM is loaded
 document.addEventListener("DOMContentLoaded", () => {
     initializeElements();
