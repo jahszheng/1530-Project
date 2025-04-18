@@ -3,8 +3,9 @@ let ingredname, price, addIngredentButton;
 const items = JSON.parse(localStorage.getItem('Ingredents')) || [];
 const recpi = JSON.parse(localStorage.getItem('recipes')) || [];
 // Initialize URL object correctly (if you're using it)
-const ingredsUrl = "http://localhost:8000/Ingredents";
-const recipUrl = "http://localhost:8001/recipes";
+const INGREDIENTS_API = "http://localhost:8000/Ingredents";
+const RECIPES_API = "http://localhost:8001/recipes";
+
 
 function initializeElements() {
     ingredname = document.getElementById("insert_new_ingredient_text_input");
@@ -30,63 +31,21 @@ function add_event_listeners() {
 }
 
 async function add_ingredints() {
-    console.log("added ingredient please");
-    
-    // Get the values from input fields
-    const ingred = ingredname.value;
-    const expense = price.value;
-
-    // Validate inputs
-    if (!ingred || !expense) {
-        alert("Please enter both name and price");
-        return;
-    }
-
-    let new_ingred = {
-        "name": ingred,
-        "price": expense   
-    };
-
-    try {
-        // Check for duplicates in localStorage
-        const existingNames = new Set(
-            items.map(item => item.name.toLowerCase())
-        );
-        
-        if (existingNames.has(ingred.toLowerCase())) {
-            alert(`"${ingred}" already exists!`);
-            return;
-        }
-
-        // Add to local storage
-        items.push(new_ingred);
-        localStorage.setItem('Ingredents', JSON.stringify(items));
-
-        // If you're using a server endpoint
         try {
-            const response = await fetch(ingredsUrl, {
+            const response = await fetch(INGREDIENTS_API, {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(new_ingred)
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(ingredname),
             });
-            
-            console.log("Successfully added to server");
+            if (!response.ok) throw new Error("Failed to add");
+            const result = await response.json();
+            console.log("Added:", result);
+            return result;
         } catch (error) {
-            console.error("Error sending to server:", error);
+            console.error("Error:", error);
+            return null;
         }
-
-        // Clear inputs
-        ingredname.value = "";
-        price.value = "";
-
-        alert("Ingredient added successfully!");
-    } catch (error) {
-        console.error("Error:", error);
-        alert("An error occurred while adding the ingredient");
     }
-}
 
 function processIngredients(input) {
     return input
@@ -96,6 +55,36 @@ function processIngredients(input) {
       .map(line => line.trim()) // Trim each line
       .filter(line => line !== ""); // Remove empty lines
   }
+
+  async function searchIngredient(name) {
+    try {
+        const response = await fetch(`${INGREDIENTS_API}/${name}`);
+        if (!response.ok) throw new Error("Not found");
+        const ingredient = await response.json();
+        console.log("Found:", ingredient);
+        return ingredient;
+    } catch (error) {
+        console.error("Error:", error);
+        return null;
+    }
+}
+
+async function addIngredient(newIngredient) {
+    try {
+        const response = await fetch(INGREDIENTS_API, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(newIngredient),
+        });
+        if (!response.ok) throw new Error("Failed to add");
+        const result = await response.json();
+        console.log("Added:", result);
+        return result;
+    } catch (error) {
+        console.error("Error:", error);
+        return null;
+    }
+}
 
 async function add_Rec(){
     // add recipes please
