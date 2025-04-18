@@ -9,13 +9,15 @@ const recipUrl = "http://localhost:8000/recipes";
 function initializeElements() {
     ingredname = document.getElementById("insert_new_ingredient_text_input");
     price = document.getElementById("insert_new_ingredient_price_text_input");
-    addIngredentButton = document.getElementById("add_new_ingredent");
+    addIngredentButton = document.getElementById("add_new_ingredient_button");
 
     reci = document.getElementById("insert_new_recipe_text_input");
     ingredent_list = document.getElementById("insert_new_ingredients_text_input");
     directions = document.getElementById("insert_new_directions_textarea");
     description = document.getElementById("insert_new_description_textarea");
-    buttonRecp = document.getElementById("add_new_sp_button");
+    buttonRecp = document.getElementById("add_new_recipe_button");
+
+    button_get_recp = document.getElementById("search_recipe_button");
 }
 
 function add_event_listeners() {
@@ -23,6 +25,7 @@ function add_event_listeners() {
     initializeElements();
     addIngredentButton.addEventListener("click", add_ingredints);
     buttonRecp.addEventListener("click", add_Rec);
+    button_get_recp.addEventListener("click",searchRecp);
 }
 
 async function add_ingredints() {
@@ -153,6 +156,58 @@ async function add_Rec(){
 }
 
 
+async function searchRecp(){
+    const searchCriteria = getSearchCriteria();
+        
+        // Get recipes from localStorage
+        const recipes = JSON.parse(localStorage.getItem('recipes')) || [];
+        
+        // Filter matching recipes
+        const matchingRecipes = recipes.filter(recipe => 
+            matchesCriteria(recipe, searchCriteria)
+        );
+        
+        // Display the results
+        displayRecipes(matchingRecipes);
+}
+
+function displayRecipes(recipes) {
+    const recipeList = document.getElementById('recipe_list');
+    const recipesBox = document.querySelector('.recipes_box');
+    
+    // Clear previous results
+    recipeList.innerHTML = '';
+    
+    if (recipes.length === 0) {
+        recipeList.innerHTML = '<li>No matching recipes found</li>';
+        recipesBox.style.display = 'block';
+        return;
+    }
+    
+    // Create list items for each recipe
+    recipes.forEach(recipe => {
+        const li = document.createElement('li');
+        li.className = 'recipe-item';
+        li.innerHTML = `
+            <h3>${recipe.Rname}</h3>
+            <p class="description">${recipe.description || ''}</p>
+            <div class="ingredients">
+                <strong>Ingredients:</strong>
+                <ul>
+                    ${recipe.ingredents.map(ing => `<li>${ing}</li>`).join('')}
+                </ul>
+            </div>
+            <div class="steps">
+                <strong>Directions:</strong>
+                <p>${recipe.steps.replace(/\n/g, '<br>')}</p>
+            </div>
+        `;
+        recipeList.appendChild(li);
+    });
+    
+    // Show the recipes box
+    recipesBox.style.display = 'block';
+}
 // Initialize everything when DOM is loaded
 document.addEventListener("DOMContentLoaded", () => {
     initializeElements();
