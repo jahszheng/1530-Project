@@ -18,6 +18,7 @@ function initializeElements() {
     buttonRecp = document.getElementById("add_new_recipe_button");
 
     button_get_recp = document.getElementById("search_recipe_button");
+    button_recipe_save = document.getElementById("insert_recipe_name_text_input");
 }
 
 function add_event_listeners() {
