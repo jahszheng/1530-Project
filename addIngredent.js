@@ -106,7 +106,7 @@ async function add_Rec(){
 
 
     let new_rec = {
-        "Rname": recipeName,
+        "Rname": recipeName.toLowerCase().trim(),
         "ingredents": recipeList,
         "steps": recipeDirct,
         "description": recipeDescrip
@@ -158,18 +158,24 @@ async function add_Rec(){
 
 
 async function searchRecp(){
-    const searchCriteria = getSearchCriteria();
-        
-        // Get recipes from localStorage
-        const recipes = JSON.parse(localStorage.getItem('recipes')) || [];
-        
-        // Filter matching recipes
-        const matchingRecipes = recipes.filter(recipe => 
-            matchesCriteria(recipe, searchCriteria)
-        );
-        
-        // Display the results
-        displayRecipes(matchingRecipes);
+
+    const recipeNameToSearch = button_recipe_save.value.trim();
+
+    // Get recipes from localStorage
+    const recipes = JSON.parse(localStorage.getItem('recipes')) || [];
+    
+
+    const foundRecipe = recipes.find(recipe => 
+        recipe.Rname === recipeNameToSearch.toLowerCase()
+    );
+    
+    if (foundRecipe) {
+        // Display the found recipe (you can modify this to display however you want)
+        console.log("Found recipe:", foundRecipe);
+        displayRecipe(foundRecipe);
+    } else {
+        alert(`Recipe "${recipeNameToSearch}" not found`);
+    }
 }
 
 function displayRecipes(recipes) {
