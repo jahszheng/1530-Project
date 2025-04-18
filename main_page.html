@@ -9,14 +9,8 @@
 </head>
 
 <body>
-  <div class="top_bar">
-    <div class="website_name">
-      <legend>Pocket Pantry</legend>
-    </div>
-    <div class="search">
-      <input type="text" placeholder="Search Recipes..." />
-      <button type="button">Search</button>
-    </div>
+  <div class="website_name">
+    <legend>Pocket Pantry</legend>
   </div>
   <div class="left_box">
     <div class="add_ingredient">
@@ -67,6 +61,27 @@
       </ul>
       <button type="button" id="search_recipe_button">Search recipe</button>
       <button type="button" id="save_recipe_button">Save recipe</button>
+    </div>
+  </div>
+
+  <!--
+  <div class="search_bar">
+    <input type="text" id="ingredientInput" placeholder="Enter ingredient" />
+    <button onclick="addIngredient()">Add</button>
+    <button onclick="searchRecipes()">Search</button>
+  </div>
+-->
+
+  <div class="pantry_boxes">
+    <div class="ingredients_box">
+      <h2>My Ingredients</h2>
+      <ul id="ingredients_list"></ul>
+    </div>
+
+    <div class="recipes_box">
+      <h2>Matching Recipes</h2>
+      <ul id="recipe_list"></ul>
+      <!-- <button onclick="goBack()">Back to Ingredients</button> -->
     </div>
   </div>
 

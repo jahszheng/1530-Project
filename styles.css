@@ -23,6 +23,10 @@ textarea{
 input {
     width:100%;
 }
+
+h2 {
+    margin-left:40%;
+}
 .add_ingredient,
 .add_recipe,
 .save_recipe {
@@ -40,21 +44,51 @@ input {
     max-width: 260px;
 }
 
-.search input {
-    position:absolute;
-    top:60px;
-    margin-left:25%;
-    width:60%
-}
-
-.search button {
-    position:absolute;
-    margin-left:86%;
-    margin-top: 2%;
-    border-radius:10px;
-}
 
 .website_name legend{
     margin-top: 10px;
     font-size:large;
 }
+
+.ingredients_box {
+    padding:20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin-left:23%;
+    margin-top:-40.8%;
+    width:30%;
+    height:70%;
+}
+
+.recipes_box {
+    padding:20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin-left:60%;
+    margin-top:-35.6%;
+    width:30%;
+    height:70%;
+}
+
+.search_bar {
+    margin-left:25%;
+    width:40%
+}
+
+.search_bar input {
+    width:40%;
+    margin-left:45%;
+}
+
+/*
+* {
+    outline: 2px solid red;
+}
+
+.recipes_box {
+    display:none;
+}
+
+    */
