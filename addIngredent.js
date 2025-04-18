@@ -4,7 +4,7 @@ const items = JSON.parse(localStorage.getItem('Ingredents')) || [];
 const recpi = JSON.parse(localStorage.getItem('recipes')) || [];
 // Initialize URL object correctly (if you're using it)
 const ingredsUrl = "http://localhost:8000/Ingredents";
-const recipUrl = "http://localhost:8000/recipes";
+const recipUrl = "http://localhost:8001/recipes";
 
 function initializeElements() {
     ingredname = document.getElementById("insert_new_ingredient_text_input");
