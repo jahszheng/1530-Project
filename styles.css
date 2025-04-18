@@ -24,15 +24,13 @@ input {
     width:100%;
 }
 
-.pantry_boxes {
-    clear:both;
-    width: 70%;
-    float:left;
-}
+.container {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+  }
 
-.pantry_boxes h2 {
-    text-align: center;
-}
+
 .add_ingredient,
 .add_recipe,
 .save_recipe {
@@ -56,28 +54,28 @@ input {
     font-size:large;
 }
 
-.ingredients_box {
-    clear:both;
-    padding:20px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-    /* margin-left:23%; */
-    /* margin-top:-40.8%; */
-    width:30%;
-    height:70%;
+.pantry_boxes {
+    display:flex;
+    min-height:80%;
+    width: 80%;
     float:left;
+    margin-left:10px;
 }
 
+.pantry_boxes h2 {
+    text-align: center;
+}
+.ingredients_box,
 .recipes_box {
+    /* clear:both; */
     padding:20px;
     border: 2px solid #ccc;
     border-radius: 10px;
     background-color: #f9f9f9;
     /* margin-left:60%; */
     /* margin-top:-35.6%; */
-    width:30%;
-    height:70%;
+    width:45%;
+    min-height:80%;
     float:left;
 }
 
