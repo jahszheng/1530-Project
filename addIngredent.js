@@ -124,8 +124,8 @@ async function add_Rec(){
         }
 
         // Add to local storage
-        items.push(new_rec);
-        localStorage.setItem('recipes', JSON.stringify(items));
+        recpi.push(new_rec);
+        localStorage.setItem('recipes', JSON.stringify(recpi));
 
         // If you're using a server endpoint
         try {
@@ -163,7 +163,9 @@ async function searchRecp(){
 
     // Get recipes from localStorage
     const recipes = JSON.parse(localStorage.getItem('recipes')) || [];
-    
+    console.log(recpi);
+    console.log(recipes);
+    console.log(items);
 
     const foundRecipe = recipes.find(recipe => 
         recipe.Rname === recipeNameToSearch.toLowerCase()
