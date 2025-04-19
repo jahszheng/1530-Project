@@ -157,24 +157,22 @@ async function add_Rec(){
 }
 
 
-async function searchRecp(){
+async function searchRecp() {
+    const recipeNameToSearch = button_recipe_save.value.trim().toLowerCase();
 
-    const recipeNameToSearch = button_recipe_save.value.trim();
-
-    // Get recipes from localStorage
     const recipes = JSON.parse(localStorage.getItem('recipes')) || [];
-    console.log(recpi);
-    console.log(recipes);
-    console.log(items);
 
-    const foundRecipe = recipes.find(recipe => 
-        recipe.Rname === recipeNameToSearch.toLowerCase()
+    // 🔍 Debug logs
+    console.log("Searching for:", recipeNameToSearch);
+    console.log("Available recipes:", recipes.map(r => r.Rname));
+
+    const foundRecipe = recipes.find(recipe =>
+        recipe.Rname === recipeNameToSearch
     );
-    
+
     if (foundRecipe) {
-        // Display the found recipe (you can modify this to display however you want)
         console.log("Found recipe:", foundRecipe);
-        displayRecipe(foundRecipe);
+        displayRecipes([foundRecipe]);
     } else {
         alert(`Recipe "${recipeNameToSearch}" not found`);
     }
