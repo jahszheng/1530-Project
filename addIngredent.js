@@ -169,10 +169,6 @@ async function searchRecp() {
 
         const recipes = await response.json();
 
-    // 🔍 Debug logs
-    console.log("Searching for:", recipeNameToSearch);
-    console.log("Available recipes:", recipes.map(r => r.Rname));
-
     const foundRecipe = recipes.find(recipe =>
         recipe.Rname === recipeNameToSearch
     );

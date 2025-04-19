@@ -59,7 +59,7 @@ input {
     min-height:80%;
     width: 80%;
     float:left;
-    margin-left:10px;
+    margin-left:20px;
 }
 
 .pantry_boxes h2 {
@@ -67,122 +67,26 @@ input {
 }
 .ingredients_box,
 .recipes_box {
-    /* clear:both; */
     padding:20px;
     border: 2px solid #ccc;
     border-radius: 10px;
     background-color: #f9f9f9;
-    /* margin-left:60%; */
-    /* margin-top:-35.6%; */
     width:45%;
     min-height:80%;
     float:left;
+    height: 500px;
 }
 
 .search_bar {
-    margin-left:25%;
-    width:40%
+    float:right;
+    width:40%;
+    position: absolute;
+    top:64%;
+    left:20%;
+
 }
 
 .search_bar input {
+    align-content: center;
     width:40%;
-    margin-left:45%;
 }
-
-/*
-* {
-    outline: 2px solid red;
-}
-
-.recipes_box {
-    display:none;
-}
-
-    */
-/* 
-    @media (max-width: 1024px)
-{
-    button {
-        border-radius: 10px;
-        margin-bottom:5px;
-    }
-    
-    li {
-        list-style-type: none;
-        margin-left: -40px;
-        padding:2px;
-    }
-    
-    textarea{
-        width: 100%;
-        min-height: 60px;
-        max-height: 300px;
-        resize: vertical;
-        padding: 10px;
-        font-size: 15px;
-        font-family: inherit;
-        box-sizing: border-box;
-    }
-    
-    input {
-        width:100%;
-    }
-    
-    h2 {
-        margin-left:40%;
-    }
-    .add_ingredient,
-    .add_recipe,
-    .save_recipe {
-        padding:6px;
-        border: 2px solid #606b21; 
-        margin-top:5%;
-        margin-bottom: 5%;
-        border-radius: 6px; 
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .left_box {
-        font-size: large;
-        max-width: 260px;
-    }
-    
-    
-    .website_name legend{
-        margin-top: 10px;
-        font-size:large;
-    }
-    
-    .ingredients_box {
-        padding:20px;
-        border: 2px solid #ccc;
-        border-radius: 10px;
-        background-color: #f9f9f9;
-        margin-left:30%;
-        margin-top:-78.8%;
-        width:30%;
-        height:70%;
-    }
-    
-    .recipes_box {
-        padding:20px;
-        border: 2px solid #ccc;
-        border-radius: 10px;
-        background-color: #f9f9f9;
-        margin-left:66%;
-        margin-top:-78.2%;
-        width:30%;
-        height:70%;
-    }
-    
-    .search_bar {
-        margin-left:10%;
-        width:40%
-    }
-    
-    .search_bar input {
-        width:40%;
-        margin-left:45%;
-    }
-} */
