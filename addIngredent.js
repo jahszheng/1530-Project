@@ -160,7 +160,14 @@ async function add_Rec(){
 async function searchRecp() {
     const recipeNameToSearch = button_recipe_save.value.trim().toLowerCase();
 
-    const recipes = JSON.parse(localStorage.getItem('recipes')) || [];
+    try {
+        const response = await fetch(recipUrl);
+
+        if (!response.ok) {
+            throw new Error("Failed to fetch recipes from server");
+        }
+
+        const recipes = await response.json();
 
     // 🔍 Debug logs
     console.log("Searching for:", recipeNameToSearch);
@@ -176,6 +183,10 @@ async function searchRecp() {
     } else {
         alert(`Recipe "${recipeNameToSearch}" not found`);
     }
+    } catch (error) {
+        console.error("Error fetching from server:", error);
+        alert("Could not connect to server or fetch data.");
+}
 }
 
 function displayRecipes(recipes) {
