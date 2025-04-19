@@ -68,18 +68,16 @@
     
   <div class="search_bar">
     <input type="text" id="ingredientInput" placeholder="Enter ingredient" />
-    <button onclick="addIngredient()">Add</button>
-    <button onclick="removeIngredient()">Remove</button>
-    <button onclick="search()">Search</button>
+    <button id="add_button">Add</button>
+    <button id="remove_button">Remove</button>
+    <button id="search_button">Search</button>
   </div>
 
 
     <div class="pantry_boxes">
       <div class="ingredients_box">
         <h2>My Ingredients</h2>
-        <ul id="ingredients_list">
-          <li><h4>Hi I am an ingredient</h4></li>
-        </ul>
+        <ul id="ingredients_list"></ul>
       </div>
 
       <div class="recipes_box">

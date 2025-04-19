@@ -90,3 +90,7 @@ input {
     align-content: center;
     width:40%;
 }
+
+.ingredients_box li {
+    list-style-type: disc;
+}
