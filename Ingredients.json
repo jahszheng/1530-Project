@@ -1,0 +1,106 @@
+{
+  "Ingredients": [
+    {
+      "name": "apple",
+      "price": "1.56",
+      "id": "apple",
+      "description": "A fruit used in apple pie"
+    },
+    {
+      "name": "ice",
+      "price": ".50",
+      "id": "ice",
+      "description": "Frozen water used in drinks"
+    },
+    {
+      "name": "milk",
+      "price": "2.46",
+      "id": "milk",
+      "description": "Comes from cows and has several variations like fat or skim"
+    },
+    {
+      "name": "honey",
+      "price": "7.00",
+      "id": "honey",
+      "description": "A sweet substance bees make"
+    },
+    {
+      "name": "vanilla ice cream",
+      "price": "5.36",
+      "id": "vanilla ice cream",
+      "description": "vanilla flavored ice cream"
+    },
+    {
+      "name": "flour",
+      "price": "9.49",
+      "id": "flour",
+      "description": "A key ingredient in baking"
+    },
+    {
+      "name": "egg",
+      "price": "6.27",
+      "id": "egg",
+      "description": "An ingredient often used in omelets"
+    },
+    {
+      "name": "water",
+      "price": "0.00",
+      "id": "water",
+      "description": "its water"
+    },
+    {
+      "name": "white sugar",
+      "price": "21.78",
+      "id": "white sugar",
+      "description": "A common addition to make something sweet"
+    },
+    {
+      "name": "linguine pasta",
+      "price": "2.99",
+      "id": "linguine pasta",
+      "description": "A type of shaped pasta"
+    },
+    {
+      "name": "tomato",
+      "price": "6.99",
+      "id": "tomato",
+      "description": "A key ingredient in marinara sauce"
+    },
+    {
+      "name": "salted butter",
+      "price": "3.18",
+      "id": "salted butter",
+      "description": "Butter that is salted"
+    },
+    {
+      "name": "unsalted butter",
+      "price": "3.18",
+      "id": "unsalted butter",
+      "description": "Butter that is unsalted"
+    },
+    {
+      "name": "salt",
+      "price": "9.12",
+      "id": "salt",
+      "description": "A spice used in almost all dishes to enhance flavor"
+    },
+    {
+      "name": "cinnamon",
+      "price": "7.59",
+      "id": "cinnamon",
+      "description": "A spice often used on pastries"
+    },
+    {
+      "id": "beef",
+      "name": "beef",
+      "price": "6.99",
+      "description": "Meat from a cow, often used in burgers"
+    },
+    {
+      "name": "test",
+      "price": "1.99",
+      "description": "Test description",
+      "id": "test"
+    }
+  ]
+}

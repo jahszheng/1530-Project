@@ -9,5 +9,5 @@ Ket-Hwa Cheng, Aidan Conroy, Alexandr Yarashevich, Steven Zheng
 # notes about the fake json database please use the command 
 on different terminals please
 
-npx json-server --watch recipes.json --port 8001
-npx json-server --watch Ingredents.json --port 8000
+npx json-server --watch Recipes.json --port 8001
+npx json-server --watch Ingredients.json --port 8000

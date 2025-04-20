@@ -3,6 +3,11 @@ button {
     margin-bottom:5px;
 }
 
+a{
+    color: black;
+    text-decoration: none;
+}
+
 li {
     list-style-type: none;
     margin-left: -40px;
@@ -54,8 +59,16 @@ input {
     font-size:large;
 }
 
+.boxes{
+    display:flex;
+    min-height:80%;
+    width: 80%;
+    float:left;
+}
+
 .pantry_boxes {
     display:flex;
+    flex-direction: column;
     min-height:80%;
     width: 80%;
     float:left;
@@ -65,25 +78,39 @@ input {
 .pantry_boxes h2 {
     text-align: center;
 }
+
+.search_results{
+    float: left;
+    display: block;
+    width: 75%;
+    padding:20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    margin-top: 10px;
+}
+
+.search_results h3{
+    float: left;
+}
+
 .ingredients_box,
-.recipes_box {
+.recipes_box{
     padding:20px;
     border: 2px solid #ccc;
     border-radius: 10px;
     background-color: #f9f9f9;
     width:45%;
     min-height:80%;
+    margin-top: 10px;
     float:left;
-    height: 500px;
 }
 
 .search_bar {
-    float:right;
-    width:40%;
-    position: absolute;
-    top:64%;
-    left:20%;
-
+    display: block;
+    width:60%;
+    margin-top: 10px;
+    margin-left: 15%;
 }
 
 .search_bar input {
@@ -93,4 +120,20 @@ input {
 
 .ingredients_box li {
     list-style-type: disc;
+}
+
+.ingredients_box li{
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    padding: 5px;
+    margin: 5px;
+}
+
+.recipes_box li{
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    padding: 5px;
+    margin: 5px;
 }
