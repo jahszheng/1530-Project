@@ -33,37 +33,6 @@
       ],
       "directions": "eat the ice cream out of the tub... this is a joke submission",
       "description": "This is a bowl of ice cream... it was a joke entry"
-    },
-    {
-      "id": "ice soup",
-      "name": "ice soup",
-      "ingredient_list": [
-        "water, ice"
-      ],
-      "directions": "as",
-      "description": "asd"
-    },
-    {
-      "name": "test",
-      "ingredient_list": [
-        "1",
-        "2",
-        "3"
-      ],
-      "description": "adsf",
-      "directions": "qwer",
-      "id": "test"
-    },
-    {
-      "name": "test2",
-      "ingredient_list": [
-        "1",
-        "2",
-        "3"
-      ],
-      "description": "test2",
-      "directions": "test2",
-      "id": "test2"
     }
   ]
 }
