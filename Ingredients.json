@@ -95,12 +95,6 @@
       "name": "beef",
       "price": "6.99",
       "description": "Meat from a cow, often used in burgers"
-    },
-    {
-      "name": "test",
-      "price": "1.99",
-      "description": "Test description",
-      "id": "test"
     }
   ]
 }
