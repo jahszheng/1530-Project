@@ -1,6 +1,13 @@
+body {
+    background-color: #f5f5f5;
+}
+
 button {
     border-radius: 10px;
     margin-bottom:5px;
+    background-color: #578659;
+    color:white;
+    border-color: #578659;
 }
 
 a{
@@ -23,10 +30,14 @@ textarea{
     font-size: 15px;
     font-family: inherit;
     box-sizing: border-box;
+    border-radius: 5px;
+    border-color: #cccccc;
 }
 
 input {
     width:100%;
+    border-radius: 5px;
+    border-color: #cccccc;
 }
 
 .container {
@@ -40,12 +51,13 @@ input {
 .add_recipe,
 .save_recipe {
     padding:6px;
-    border: 2px solid #606b21; 
+    border: 2px solid #cccccc; 
     margin-top:5%;
     margin-bottom: 5%;
     border-radius: 6px; 
     display: flex;
     flex-direction: column;
+    background-color: #eeeeee;
 }
 
 .left_box {
@@ -104,6 +116,10 @@ input {
     min-height:80%;
     margin-top: 10px;
     float:left;
+    height:500px;
+    padding:6px;
+    border: 2px solid #cccccc; 
+    background-color: #eeeeee;
 }
 
 .search_bar {
