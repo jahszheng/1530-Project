@@ -1,50 +1,69 @@
 {
   "recipes": [
     {
-      "id": "1",
-      "Rname": "apple crumble",
-      "ingredents": [
+      "id": "apple crumble",
+      "name": "apple crumble",
+      "ingredient_list": [
         "apple",
         "white sugar",
         "flour",
         "unsalted butter",
         "cinnamon"
       ],
-      "steps": "cut apples into pieces and put into a baking dish. \n combine sugar, flour, water, butter and salt into another bowl. \n add mixture ontop of apples in dish and bake until brown.",
-      "description": "This is a basic apple crumble",
-      "image": "https://www.biggerbolderbaking.com/wp-content/uploads/2014/12/Apple-Crumble-WS-Thumbnail3.jpg"
+      "directions": "cut apples into pieces and put into a baking dish. \n combine sugar, flour, water, butter and salt into another bowl. \n add mixture ontop of apples in dish and bake until brown.",
+      "description": "This is a basic apple crumble"
     },
     {
-      "id": "2",
-      "Rname": "pie crust",
-      "ingredents": [
+      "id": "pie crust",
+      "name": "pie crust",
+      "ingredient_list": [
         "flour",
         "Salt",
         "unsalted butter",
         "water"
       ],
-      "steps": "Combine the flour and salt into bowl. \n slice cold butter and mix into the bowl of flour and salt until clumps form.\n add cold water a tablespoon at a time.\n roll dough into a cirlce and press into a pan.",
-      "description": "This is a basic pie crust",
-      "image": "https://ohsweetbasil.com/wp-content/uploads/Pie-crust-12.jpg"
+      "directions": "Combine the flour and salt into bowl. \n slice cold butter and mix into the bowl of flour and salt until clumps form.\n add cold water a tablespoon at a time.\n roll dough into a cirlce and press into a pan.",
+      "description": "This is a basic pie crust"
     },
     {
-      "id": "3",
-      "Rname": "ice cream bowl",
-      "ingredents": [
+      "id": "ice cream bowl",
+      "name": "ice cream bowl",
+      "ingredient_list": [
         "vanilla ice cream"
       ],
-      "steps": "eat the ice cream out of the tub... this is a joke submission",
-      "description": "This is a bowl of ice cream... it was a joke entry",
-      "image": "https://thebusybaker.ca/wp-content/uploads/2019/05/best-ever-no-churn-vanilla-ice-cream-2.jpg"
+      "directions": "eat the ice cream out of the tub... this is a joke submission",
+      "description": "This is a bowl of ice cream... it was a joke entry"
     },
     {
-      "id": "2b96",
-      "Rname": "ice soup",
-      "ingredents": [
+      "id": "ice soup",
+      "name": "ice soup",
+      "ingredient_list": [
         "water, ice"
       ],
-      "steps": "as",
+      "directions": "as",
       "description": "asd"
+    },
+    {
+      "name": "test",
+      "ingredient_list": [
+        "1",
+        "2",
+        "3"
+      ],
+      "description": "adsf",
+      "directions": "qwer",
+      "id": "test"
+    },
+    {
+      "name": "test2",
+      "ingredient_list": [
+        "1",
+        "2",
+        "3"
+      ],
+      "description": "test2",
+      "directions": "test2",
+      "id": "test2"
     }
   ]
 }

@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Recipe Website</title>
   <link rel="stylesheet" href="styles.css" />
-  <script src="addIngredent.js"></script>
+  <!-- <script src="addIngredent.js"></script> -->
+  <script src="backend.js"></script>
 </head>
 
 <body>
@@ -30,6 +31,7 @@
         <button type="button" id="add_new_ingredient_button">Add Ingredient</button>
         <button type="button" id="search_ingredient_button">Search Ingredient</button>
         <button type="button" id="update_ingredient_button">Update Ingredient</button>
+        <button type="button" id="view_all_ingredients"><a href="ingredients.html">View All</a></button>
       </div>
 
 
@@ -62,27 +64,32 @@
         </ul>
         <button type="button" id="search_recipe_button">Search recipe</button>
         <button type="button" id="save_recipe_button">Save recipe</button>
+        <button type="button" id="view_all_recipes"><a href="recipes.html">View All</a></button>
       </div>
     </div>
 
-    
-  <div class="search_bar">
-    <input type="text" id="ingredientInput" placeholder="Enter ingredient" />
-    <button id="add_button">Add</button>
-    <button id="remove_button">Remove</button>
-    <button id="search_button">Search</button>
-  </div>
-
-
     <div class="pantry_boxes">
-      <div class="ingredients_box">
-        <h2>My Ingredients</h2>
-        <ul id="ingredients_list"></ul>
+      <div id="search_results">
       </div>
 
-      <div class="recipes_box">
-        <h2>Matching Recipes</h2>
-        <ul id="recipe_list"></ul>
+      <div class ="boxes">
+        <div class="ingredients_box">
+          <h2>My Ingredients</h2>
+          <ul id="ingredients_list"></ul>
+        </div>
+
+        <div class="recipes_box">
+          <h2>Matching Recipes</h2>
+          <ul id="recipe_list"></ul>
+        </div>
+      </div>
+
+      <div class="search_bar">
+        <input type="text" id="ingredientInput" placeholder="Enter ingredient" />
+        <button id="add_button">Add</button>
+        <button id="remove_button">Remove</button>
+        <button id="search_button">Search</button>
+        <button id="clear_all_button">Clear All</button>
       </div>
     </div>
   </div>
