@@ -8,6 +8,11 @@ Simple website that will allow users to select ingredients to search for recipes
 - JS <br>
 - Node.js
 
+## Known issue
+there is a possible issue with one either one of our databases where when you do the npx json-server --watch Recipes.json --port 8001
+there is a possibility that the Recipes.json becomes recipes.json when loading in. If this does happen please manually change the line that says 
+recipes_db = new URL("http://localhost:8001/Recipes"); to
+recipes_db = new URL("http://localhost:8001/recipes");
 ## Getting Started
 
 1. Download Node.js from https://nodejs.org/en
